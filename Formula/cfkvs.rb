@@ -5,21 +5,21 @@
 class Cfkvs < Formula
   desc "A simple command line tool for CloudFront Key Value Store"
   homepage "https://github.com/michimani/cfkvs"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/michimani/cfkvs/releases/download/v0.1.0/cfkvs_0.1.0_darwin_amd64.tar.gz"
-      sha256 "b675a8c2f39a4c372759f04733131ad4646731ea62c6e357d942394091aec864"
+      url "https://github.com/michimani/cfkvs/releases/download/v0.1.1/cfkvs_0.1.1_darwin_amd64.tar.gz"
+      sha256 "ae8c021586d7bca2dcb7a285d51dd404d5443f0dcc31f098d2004dc51415b96e"
 
       def install
         bin.install "cfkvs"
       end
     end
     on_arm do
-      url "https://github.com/michimani/cfkvs/releases/download/v0.1.0/cfkvs_0.1.0_darwin_arm64.tar.gz"
-      sha256 "b0268751ddff9e0486838b2b944f5d57e60583945edc0beb6e8bc5679d8e8eb5"
+      url "https://github.com/michimani/cfkvs/releases/download/v0.1.1/cfkvs_0.1.1_darwin_arm64.tar.gz"
+      sha256 "c95f6c68fcf8535f046da9d02aa49b94debb09170338f514c656b4607e9ed849"
 
       def install
         bin.install "cfkvs"
@@ -30,8 +30,8 @@ class Cfkvs < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/michimani/cfkvs/releases/download/v0.1.0/cfkvs_0.1.0_linux_amd64.tar.gz"
-        sha256 "7f2f9466a24459d5784179f12e9299a0854dab3b49f915fb0cedaa0b629d11a1"
+        url "https://github.com/michimani/cfkvs/releases/download/v0.1.1/cfkvs_0.1.1_linux_amd64.tar.gz"
+        sha256 "55533943c470f96d3235d91d20bdd467ca9ddbda89b70927cd3207aa58827748"
 
         def install
           bin.install "cfkvs"
@@ -40,8 +40,8 @@ class Cfkvs < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/michimani/cfkvs/releases/download/v0.1.0/cfkvs_0.1.0_linux_arm64.tar.gz"
-        sha256 "4151539b6240bc4c770235fc42c1e577e7861119f1fa28309174d4e34e375f5f"
+        url "https://github.com/michimani/cfkvs/releases/download/v0.1.1/cfkvs_0.1.1_linux_arm64.tar.gz"
+        sha256 "c1972d124408e82fc392d41b4c1d95f6aa1f0d7128be5b7e32da06ace652ab99"
 
         def install
           bin.install "cfkvs"
